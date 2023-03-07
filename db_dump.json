@@ -1,0 +1,154 @@
+[
+{
+    "model": "catalog.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Horror"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Detective"
+    }
+},
+{
+    "model": "catalog.genre",
+    "pk": 3,
+    "fields": {
+        "name": "Fantasy"
+    }
+},
+{
+    "model": "catalog.language",
+    "pk": 1,
+    "fields": {
+        "name": "EN"
+    }
+},
+{
+    "model": "catalog.language",
+    "pk": 2,
+    "fields": {
+        "name": "RU"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 1,
+    "fields": {
+        "first_name": "Agatha",
+        "last_name": "Miller",
+        "pseudonym": "Agatha Christie",
+        "country": "Great Britain",
+        "date_of_birth": "1890-09-15",
+        "date_of_death": "1976-01-12"
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Stephen",
+        "last_name": "King",
+        "pseudonym": "Stephen King",
+        "country": "USA",
+        "date_of_birth": "1947-09-21",
+        "date_of_death": null
+    }
+},
+{
+    "model": "catalog.author",
+    "pk": 3,
+    "fields": {
+        "first_name": "Joanne",
+        "last_name": "Rowling",
+        "pseudonym": "Joanne Rowling",
+        "country": "Great Britain",
+        "date_of_birth": "1965-07-31",
+        "date_of_death": null
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 1,
+    "fields": {
+        "title": "It",
+        "author": 2,
+        "genre": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 2,
+    "fields": {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": 3,
+        "genre": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+        "title": "Murder on the Orient Express",
+        "author": 1,
+        "genre": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": 1,
+    "fields": {
+        "book": 1,
+        "isbn": "1234567891234",
+        "language": 2,
+        "borrower": 1,
+        "due_back": "2023-02-28",
+        "status": "On Loan"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": 2,
+    "fields": {
+        "book": 2,
+        "isbn": "9876543211234",
+        "language": 2,
+        "borrower": null,
+        "due_back": null,
+        "status": "Available"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": 3,
+    "fields": {
+        "book": 3,
+        "isbn": "9998887776665",
+        "language": 2,
+        "borrower": 1,
+        "due_back": "2023-03-01",
+        "status": "Reserved"
+    }
+},
+{
+    "model": "catalog.bookinstance",
+    "pk": 4,
+    "fields": {
+        "book": 1,
+        "isbn": "12345432123",
+        "language": 1,
+        "borrower": null,
+        "due_back": null,
+        "status": "Lost"
+    }
+}
+]
